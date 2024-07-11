@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile Page</title>
+</head>
+<body>
+    <%- include('common/navbar') %>
+    <h1>This is <%= user.name %></h1>
+    <h1>My Email is <%= user.email %></h1>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+        <li><%= item %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
